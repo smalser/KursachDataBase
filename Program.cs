@@ -14,6 +14,10 @@ namespace KursachBD
         [STAThread]
         static void Main()
         {
+            // Инитуем подключение к бд
+            SQLConnection.init();
+
+
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form1());
